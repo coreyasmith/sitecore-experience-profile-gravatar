@@ -14,9 +14,32 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".config", ".config", "{0813
 		README.md = README.md
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Project", "Project", "{7919272A-8DBC-494C-9DEA-E57970088106}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{FF52C080-2930-4607-8D02-B1A7DC4B5BB8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoreyAndRick.Project.Common", "src\Project\Common\sitecore\CoreyAndRick.Project.Common.csproj", "{9A822058-CE1D-4A67-8A3C-7F3F6DC24F25}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Docker|Any CPU = Docker|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9A822058-CE1D-4A67-8A3C-7F3F6DC24F25}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A822058-CE1D-4A67-8A3C-7F3F6DC24F25}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A822058-CE1D-4A67-8A3C-7F3F6DC24F25}.Docker|Any CPU.ActiveCfg = Docker|Any CPU
+		{9A822058-CE1D-4A67-8A3C-7F3F6DC24F25}.Docker|Any CPU.Build.0 = Docker|Any CPU
+		{9A822058-CE1D-4A67-8A3C-7F3F6DC24F25}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A822058-CE1D-4A67-8A3C-7F3F6DC24F25}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{FF52C080-2930-4607-8D02-B1A7DC4B5BB8} = {7919272A-8DBC-494C-9DEA-E57970088106}
+		{9A822058-CE1D-4A67-8A3C-7F3F6DC24F25} = {FF52C080-2930-4607-8D02-B1A7DC4B5BB8}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {45DA73FA-DA7C-4FB7-B83B-46316A4B8382}
