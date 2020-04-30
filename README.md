@@ -5,6 +5,8 @@ Experience Profile that [Rick Bauer][2] and I demonstrated in our _JavaScript
 Services & Marketing Automation_ and _Crank Up Your Sitecore Authoring and
 Marketing Experience_ presentations.
 
+![Contact in Experience Profile with robohash default image](docs/robohash.png)
+
 ## 🏗️ Setup
 
 ### 🐳 Docker
