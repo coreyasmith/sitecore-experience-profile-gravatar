@@ -1,0 +1,16 @@
+@using Sitecore.Mvc.Analytics.Extensions
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>@Html.Sitecore().Field("title", new { DisableWebEdit = true })</title>
+    @Html.Sitecore().VisitorIdentification()
+</head>
+<body>
+    <main role="main">
+        @Html.Sitecore().Controller("Contact", "ContactEditor")
+    </main>
+</body>
+</html>

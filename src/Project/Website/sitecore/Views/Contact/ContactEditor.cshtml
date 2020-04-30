@@ -1,0 +1,79 @@
+@model CoreyAndRick.Project.Website.Models.ContactEditorModel
+<div>
+    <h1>Contact Editor</h1>
+    <fieldset>
+        <legend>Avatar facet</legend>
+        @if (Model.AvatarIsSet)
+        {
+            <img src="@string.Format("data:{0};base64,{1}", Model.Avatar.MimeType, Convert.ToBase64String(Model.Avatar.Picture))"
+                 alt="Contact avatar"
+                 style="border: 1px solid;"/>
+        }
+        else
+        {
+            <div>Avatar facet is not set.</div>
+        }
+    </fieldset>
+    @using (Html.BeginForm("IdentifyContact", "Contact"))
+    {
+        <fieldset @(Model.IsKnown ? "disabled" : string.Empty)>
+            <legend>Identifier</legend>
+            <div><strong>Note:</strong> you must identify contacts for them to appear in the Experience Profile.</div>
+            @Html.LabelFor(m => m.Identifier.IdentifierSource, "Identifier source (e.g., \"website\")")
+            @Html.TextBoxFor(m => m.Identifier.IdentifierSource, new
+            {
+                placeholder = "Identifier source",
+                required = "required"
+            })
+            <br />
+            @Html.LabelFor(m => m.Identifier.Identifier, "Identifier (usually email address)")
+            @Html.TextBoxFor(m => m.Identifier.Identifier, new
+            {
+                placeholder = "Identifier",
+                required = "required"
+            })
+            <br />
+            <button type="submit">Identify contact</button>
+        </fieldset>
+    }
+    @using (Html.BeginForm("UpdateContact", "Contact"))
+    {
+        <fieldset>
+            <legend>Contact details</legend>
+            @Html.LabelFor(m => m.PersonalInformation.FirstName, "First name")
+            @Html.TextBoxFor(m => m.PersonalInformation.FirstName, new
+            {
+                placeholder = "First name",
+                required = "required"
+            })
+            <br />
+            @Html.LabelFor(m => m.PersonalInformation.LastName, "Last name")
+            @Html.TextBoxFor(m => m.PersonalInformation.LastName, new
+            {
+                placeholder = "Last name",
+                required = "required"
+            })
+            <br />
+            @Html.LabelFor(m => m.DefaultEmail.EmailAddress, "Email address")
+            @Html.TextBoxFor(m => m.DefaultEmail.EmailAddress, new
+            {
+                placeholder = "Email address",
+                required = "required"
+            })
+            <br />
+            @Html.LabelFor(m => m.SetAvatarFacet, "Set avatar facet")
+            @Html.CheckBoxFor(m => m.SetAvatarFacet)
+            <br />
+            <button type="submit">Update contact</button>
+        </fieldset>
+    }
+    @using (Html.BeginForm("AbandonSession", "Session"))
+    {
+        <fieldset>
+            <legend>Manage session</legend>
+            <div>Abandon session to make the contact appear in the Experience Profile immediately.</div>
+            <div><strong>Note:</strong> clear your cookies to create a new contact after abandoning the session.</div>
+            <button type="submit">Abandon session</button>
+        </fieldset>
+    }
+</div>

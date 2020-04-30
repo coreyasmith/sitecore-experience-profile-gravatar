@@ -1,0 +1,22 @@
+﻿---
+ID: "7f6e9853-ea2f-4054-9d80-9a211187102f"
+Parent: "da04b275-8838-4a3a-afee-817cf1fdd2eb"
+Template: "93227c5d-4fef-474d-94c0-f252ec8e8219"
+Path: /sitecore/layout/Layouts/Project/CoreyAndRick
+DB: master
+Languages:
+- Language: en
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: Corey and Rick
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20200430T012002Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
