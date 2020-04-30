@@ -74,6 +74,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Data\config\sitecore\CoreyAndRick\sc.Xdb.Collection.Search.IndexTruncation.xml" />
+  </ItemGroup>
+  <ItemGroup>
     <None Include="Properties\PublishProfiles\Docker.pubxml" />
     <None Include="Properties\PublishProfiles\Local.pubxml" />
   </ItemGroup>

@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Settings>
+  <Sitecore>
+    <XConnect>
+      <CollectionSearch>
+        <Services>
+          <IndexTruncationSettings>
+            <Type>Sitecore.Xdb.Collection.Indexing.IndexTruncationSettings, Sitecore.Xdb.Collection</Type>
+            <Options>
+              <!-- Base64-encoded fields will fail to index with the default value of 10922 because it's not divisible by 4. -->
+              <!-- xConnect will not allow this setting to be larger than 10922, so 10920 it is. -->
+              <StringFieldMaximumLength>10920</StringFieldMaximumLength>
+            </Options>
+          </IndexTruncationSettings>
+        </Services>
+      </CollectionSearch>
+    </XConnect>
+  </Sitecore>
+</Settings>
