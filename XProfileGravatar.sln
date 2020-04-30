@@ -13,6 +13,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".config", ".config", "{0813
 		docker-compose.yml = docker-compose.yml
 		NuGet.config = NuGet.config
 		PublishSettings.Sitecore.targets = PublishSettings.Sitecore.targets
+		PublishSettings.XConnectIndexer.targets = PublishSettings.XConnectIndexer.targets
 		README.md = README.md
 	EndProjectSection
 EndProject
@@ -37,6 +38,8 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Website", "Website", "{224956C9-C546-433D-A78F-1EB786EC2C3A}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoreyAndRick.Project.Website", "src\Project\Website\sitecore\CoreyAndRick.Project.Website.csproj", "{CD9216C8-992F-43BF-90EE-5C8BFE767B72}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoreyAndRick.Project.Common.XConnectIndexer", "src\Project\Common\xconnect-indexer\CoreyAndRick.Project.Common.XConnectIndexer.csproj", "{C301CBF6-1BFF-4AA3-86FC-E8EF1E5DE85F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -69,6 +72,12 @@ Global
 		{CD9216C8-992F-43BF-90EE-5C8BFE767B72}.Docker|Any CPU.Build.0 = Debug|Any CPU
 		{CD9216C8-992F-43BF-90EE-5C8BFE767B72}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CD9216C8-992F-43BF-90EE-5C8BFE767B72}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C301CBF6-1BFF-4AA3-86FC-E8EF1E5DE85F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C301CBF6-1BFF-4AA3-86FC-E8EF1E5DE85F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C301CBF6-1BFF-4AA3-86FC-E8EF1E5DE85F}.Docker|Any CPU.ActiveCfg = Debug|Any CPU
+		{C301CBF6-1BFF-4AA3-86FC-E8EF1E5DE85F}.Docker|Any CPU.Build.0 = Debug|Any CPU
+		{C301CBF6-1BFF-4AA3-86FC-E8EF1E5DE85F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C301CBF6-1BFF-4AA3-86FC-E8EF1E5DE85F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -82,6 +91,7 @@ Global
 		{BB62158E-776D-4A20-B920-C4F8BAC94937} = {8FE26AB3-9DF4-415D-B35D-F87C8B0FAEDC}
 		{224956C9-C546-433D-A78F-1EB786EC2C3A} = {7919272A-8DBC-494C-9DEA-E57970088106}
 		{CD9216C8-992F-43BF-90EE-5C8BFE767B72} = {224956C9-C546-433D-A78F-1EB786EC2C3A}
+		{C301CBF6-1BFF-4AA3-86FC-E8EF1E5DE85F} = {FF52C080-2930-4607-8D02-B1A7DC4B5BB8}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {45DA73FA-DA7C-4FB7-B83B-46316A4B8382}
