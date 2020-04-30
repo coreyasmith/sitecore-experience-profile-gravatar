@@ -61,6 +61,7 @@ services:
     image: ${REGISTRY}sitecore-xp-xconnect-indexworker:${SITECORE_VERSION}-windowsservercore-${WINDOWSSERVERCORE_VERSION}
     entrypoint: powershell.exe -Command "& C:\\tools\\entrypoints\\worker\\Development.ps1"
     volumes:
+      - .\docker\data\xconnect-indexworker\deploy:C:\src
       - .\docker\data\xconnect-indexworker\logs:C:\worker\App_Data\logs
     mem_limit: 500MB
     environment:

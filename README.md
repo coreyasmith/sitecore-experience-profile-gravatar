@@ -52,10 +52,13 @@ to see how to set the `Avatar` facet on contacts using Gravatar.
 1. Install a new instance of [Sitecore 9.3][9].
 2. Update the `publishUrl` in [`PublishSettings.Sitecore.targets`][10] to your
    Sitecore installation's web root (e.g., `C:\inetpub\wwwroot\sc93.sc`).
-3. Update the `sourceFolder` in [`CoreyAndRick.Project.Common.Dev.config`][11] to
+3. Update the `publishUrl` in [`PublishSettings.XConnectIndexer.targets`][11] to
+   your Sitecore installation's xConnect Indexer Worker root
+   (e.g., `C:\inetpub\wwwroot\sc93.sc\App_Data\jobs\continuous\IndexWorker`).
+4. Update the `sourceFolder` in [`CoreyAndRick.Project.Common.Dev.config`][12] to
    point to the root of this repository on your disk.
-4. Build the solution with the `Debug` build configuration.
-5. All projects in the solution will be automatically published to Sitecore on
+5. Build the solution with the `Debug` build configuration.
+6. All projects in the solution will be automatically published to Sitecore on
    build courtesy of [Helix Publishing Pipeline][8].
 
 [1]: https://www.gravatar.com/
@@ -68,4 +71,5 @@ to see how to set the `Avatar` facet on contacts using Gravatar.
 [8]: https://github.com/richardszalay/helix-publishing-pipeline
 [9]: https://dev.sitecore.net/Downloads/Sitecore_Experience_Platform/93/Sitecore_Experience_Platform_93_Initial_Release.aspx
 [10]: PublishSettings.Sitecore.targets
-[11]: src/Project/Common/sitecore/App_Config/Environment/CoreyAndRick.Project.Common.Dev.config
+[11]: PublishSettings.XConnectIndexer.targets
+[12]: src/Project/Common/sitecore/App_Config/Environment/CoreyAndRick.Project.Common.Dev.config
