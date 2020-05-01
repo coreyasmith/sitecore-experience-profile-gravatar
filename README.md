@@ -63,7 +63,7 @@ first.
 3. All projects in the solution will be automatically published to Docker on
    build courtesy of [Helix Publishing Pipeline][9].
 4. On the command line:
-   1. `cd C:\[path-to]\sitecore-improved-page-attribute-controls`
+   1. `cd C:\[path-to]\sitecore-experience-profile-gravatar`
    2. `docker-compose up`
 
 ### 💽 Locally
