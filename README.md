@@ -78,7 +78,7 @@ first.
    point to the root of this repository on your disk.
 5. Build the solution with the `Debug` build configuration.
 6. All projects in the solution will be automatically published to Sitecore on
-   build courtesy of [Helix Publishing Pipeline][8].
+   build courtesy of [Helix Publishing Pipeline][9].
 
 [1]: https://www.gravatar.com/
 [2]: https://twitter.com/Sitecordial
